@@ -1,13 +1,14 @@
 <html>
 <head> 
 <title> TAF Application </title>
-   <link rel="stylesheet" href="styles.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-   <style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+<style>
 body {
-  font-family: "Audiowide", sans-serif;
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
 }
 </style>
+
 </head>
 <body>
 <form onsubmit="return ValidateForm(this);">
@@ -19,7 +20,7 @@ if (frm.Email_Address.value == "") { alert('Email address is required.'); frm.Em
 if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.Email_Address.focus(); return false; }
 return true; }
 </script>
-   <h1> TAF Application </h1>
+   <h1 class="font-effect-neon"> TAF Application </h1>
 <table border="0" cellpadding="5" cellspacing="0">
 <tr> <td style="width: 50%">
 <label for="First_Name"><b>First name *</b></label><br />
